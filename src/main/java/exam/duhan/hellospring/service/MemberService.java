@@ -2,13 +2,12 @@ package exam.duhan.hellospring.service;
 
 import exam.duhan.hellospring.domain.Member;
 import exam.duhan.hellospring.repository.MemberRepository;
-import exam.duhan.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
